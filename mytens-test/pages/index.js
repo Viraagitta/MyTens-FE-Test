@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { ProfileGithub } from "../components/ProfileGithub";
 import { fetchProfile, fetchRepos } from "../store/actions";
@@ -27,7 +27,7 @@ export default function Home() {
       <Container>
         <Row>
           <Col xxl={{ span: 3, offset: 1 }}>
-            <ProfileGithub key={profile.id} profile={profile} />
+            <ProfileGithub profile={profile} />
           </Col>
           <Col md={{ span: 7, offset: 1 }} style={{ margin: "20px" }}>
             <div className="row" style={{ gap: "20px" }}>

@@ -8,6 +8,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
+import RepoCard from "../components/RepoCard";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -28,11 +29,16 @@ export default function Home() {
           <Col xxl={{ span: 3, offset: 1 }}>
             <ProfileGithub key={profile.id} profile={profile} />
           </Col>
-          <Col md={{ span: 5, offset: 3 }}>
-            <ProfileGithub key={profile.id} profile={profile} />
+          <Col md={{ span: 7, offset: 1 }} style={{ margin: "20px" }}>
+            <div className="row" style={{ gap: "20px" }}>
+              {repos.map((repo) => {
+                return <RepoCard key={repo.id} repo={repo} />;
+              })}
+            </div>
           </Col>
         </Row>
       </Container>
+
       <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

@@ -24,3 +24,11 @@ a {
     background: black;
   }
 }
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 35px;
+  justify-content: space-evenly;
+  /* background-color: rgb(200, 243, 253); */
+}

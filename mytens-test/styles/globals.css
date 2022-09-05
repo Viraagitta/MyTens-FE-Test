@@ -38,7 +38,13 @@ a {
 }
 
 .box:hover {
-  background-color: rgb(154, 190, 190);
+  background-color: rgba(187, 199, 199, 0.685);
   box-shadow: 10px 10px 15px rgba(83, 82, 82, 0.3);
+}
 
+.bg-nav {
+  background-image: linear-gradient(to right bottom,rgb(8, 12, 20),rgba(0, 0, 2, 0.719));
+  display: flex;
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
 }

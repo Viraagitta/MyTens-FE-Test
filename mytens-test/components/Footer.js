@@ -6,7 +6,6 @@ function Footer() {
 
   return (
     <footer className={styles.footer}>
-      {/* <span className={styles.logo}> */}
       {src ? (
         <Image
           loader={() => src}
@@ -17,7 +16,6 @@ function Footer() {
           unoptimized={true}
         />
       ) : null}
-      {/* </span> */}
       <p style={{ fontSize: "14px", paddingTop: "15px", marginLeft: "20px" }}>
         {" "}
         © 2022 GitHub, Inc.

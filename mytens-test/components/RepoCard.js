@@ -13,7 +13,7 @@ function RepoCard({ repo }) {
   return (
     <Card style={{ width: "23rem" }} className="box">
       <Link href={repo.html_url} passHref>
-        <Card.Body as="a">
+        <Card.Body as="a" style={{ textDecoration: "none" }}>
           <Row>
             <Col sm={8}>
               <Card.Title>{repo.name}</Card.Title>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { ProfileGithub } from "../components/ProfileGithub";
 import { fetchProfile, fetchRepos } from "../store/actions";
@@ -7,9 +7,9 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import styles from "../styles/Home.module.css";
-import Image from "next/image";
 import RepoCard from "../components/RepoCard";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -42,23 +42,7 @@ export default function Home() {
           </Row>
         </Container>
 
-        <footer className={styles.footer}>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{" "}
-            <span className={styles.logo}>
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                width={72}
-                height={16}
-              />
-            </span>
-          </a>
-        </footer>
+        <Footer />
       </div>
     </div>
   );

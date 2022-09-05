@@ -1,4 +1,3 @@
-// import { legacy_createStore as createStore } from "redux";
 import {
   DATA_FETCH_SUCCESS,
   PROFILE_FETCH_SUCCESS,

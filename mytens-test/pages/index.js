@@ -21,8 +21,7 @@ export default function Home() {
     dispatch(fetchRepos());
     dispatch(fetchProfile());
   }, []);
-  // console.log(repos);
-  // let avatar = repos.map((repo) => repo.owner.avatar_url);
+
   return (
     <div>
       <NavBar />
@@ -41,7 +40,6 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
-
         <Footer />
       </div>
     </div>

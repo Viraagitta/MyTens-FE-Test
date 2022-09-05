@@ -1,9 +1,8 @@
 import Image from "react-bootstrap/Image";
 import { BsGeoAltFill, BsLinkedin } from "react-icons/bs";
-import { HiOutlineUsers } from "react-icons/hi";
+import { HiUsers } from "react-icons/hi";
 
 export function ProfileGithub({ profile }) {
-  // let followers = profile.followers_url?.length;
   return (
     <>
       <div style={{ margin: "auto", fontFamily: "arial", marginTop: "20px" }}>
@@ -18,7 +17,7 @@ export function ProfileGithub({ profile }) {
         <h5 style={{ color: "#505754" }}>{profile.login}</h5>
         <h6 style={{ marginTop: "20px" }}>{profile.bio}</h6>
         <h6 style={{ marginTop: "20px", fontSize: "14px" }}>
-          <HiOutlineUsers /> {profile.followers} Followers | {profile.following}{" "}
+          <HiUsers /> {profile.followers} Followers | {profile.following}{" "}
           Following
         </h6>
         <h6 style={{ fontSize: "14px" }}>
